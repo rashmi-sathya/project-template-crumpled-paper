@@ -8,7 +8,7 @@ var world;
 var radius = 70;
 
 function preload(){
-
+//find the bug in the below code
 	//dustbinImg = addImage("dustbin.png");
 	//paperImg = addImage("paper.png");
 
@@ -53,12 +53,15 @@ function draw() {
 
 	
 	imageMode(CENTER);
+		//use image() command to add paper image to the ball
 
-image(ball.position.x,ball.position.y,radius,radius);
+
+image(,ball.position.x,ball.position.y,radius,radius);
+	// use image() command to add dustbin image in the canvas.
 
 
 	
-	image(1185, 570, 200,200);
+	image(,1185, 570, 200,200);
 	
 
 }
